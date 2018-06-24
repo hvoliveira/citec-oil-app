@@ -1,0 +1,51 @@
+<!--
+  Generated template for the NewTankPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Novo Tanque</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Nome</ion-label>
+      <ion-input [(ngModel)]="tankName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Capacidade</ion-label>
+      <ion-input [(ngModel)]="tankCapacity" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>pH Medido</ion-label>
+      <ion-input [(ngModel)]="tankPhMeasured" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>pH Máximo</ion-label>
+      <ion-input [(ngModel)]="tankPhHigherBound" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>pH Mínimo</ion-label>
+      <ion-input [(ngModel)]="tankPhLowerBound" type="number"></ion-input>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+  <ion-footer>
+    <ion-grid>
+      <ion-row justify-content-center>
+        <ion-col col-auto>
+          <button ion-button class="tankButton" (click)="createTank()">Criar tanque</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-footer>
